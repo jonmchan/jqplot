@@ -14,14 +14,18 @@ Make sure you follow the steps on the hg-git website to add the hggit key to the
 ## Commands
 
 ### Initial export
+```bash
 hg clone https://bitbucket.org/cleonello/jqplot
 pushd jqplot
 hg bookmark -r default master
 hg push git+ssh://git@github.com:jonmchan/jqplot.git
 popd
+```
 
 
 ### Subsequent exports
+```bash
 pushd jqplot
 hg pull
 hg push git+ssh://git@github.com:jonmchan/jqplot.git
+```
