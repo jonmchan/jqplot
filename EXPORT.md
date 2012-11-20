@@ -19,6 +19,7 @@ hg clone https://bitbucket.org/cleonello/jqplot
 pushd jqplot
 hg bookmark -r default master
 hg pull git+ssh://git@github.com:jonmchan/jqplot.git # to grab the commits for the EXPORT.md
+hg update
 hg push git+ssh://git@github.com:jonmchan/jqplot.git
 popd
 ```
@@ -29,5 +30,6 @@ popd
 pushd jqplot
 hg pull
 hg pull git+ssh://git@github.com:jonmchan/jqplot.git # only if changes made to EXPORT.md
+hg update
 hg push git+ssh://git@github.com:jonmchan/jqplot.git
 ```
